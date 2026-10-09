@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-1: #eefaf6;
+  --bg-2: #d3f1e8;
+  --ink: #0f172a;
+  --accent: #0f766e;
+  --warn: #be123c;
+}
+
+html[data-theme="dark"] {
+  --bg-1: #0b1f1d;
+  --bg-2: #10302d;
+  --ink: #e2f7f2;
+  --accent: #2dd4bf;
+  --warn: #fb7185;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: "Source Sans 3", sans-serif;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(116, 198, 157, 0.25), transparent 35%),
+    radial-gradient(circle at 90% 10%, rgba(82, 183, 136, 0.22), transparent 28%),
+    linear-gradient(135deg, var(--bg-1), var(--bg-2));
+}
+
+.card {
+  @apply rounded-2xl border border-black/5 bg-white/85 p-5 shadow-lg shadow-emerald-900/10 backdrop-blur;
+}
+
+html[data-theme="dark"] .card {
+  @apply border-white/10 bg-slate-950/65 text-slate-100 shadow-black/30;
+}
+
+.font-display {
+  font-family: "Poppins", sans-serif;
+}

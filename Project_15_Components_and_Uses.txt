@@ -1,0 +1,97 @@
+Project 15 - Components and Their Uses
+
+This project is building an AI Project Manager system. The main components below are the parts we will create and how each one will be used.
+
+1. Supervisor Orchestrator
+Use: Controls the full workflow of the system.
+What it does: Receives the project goal, sends work to the right feature, combines results, and keeps the process moving from planning to reporting.
+
+2. Planning Feature
+Use: Converts a high-level goal into a project plan.
+What it does: Creates tasks, milestones, deadlines, dependencies, and assigned owners so the project has a clear structure.
+
+3. Resource Allocation Feature
+Use: Assigns tasks to the right people.
+What it does: Matches tasks with team members based on skills, role, and availability. It helps balance workload and reduce assignment conflicts.
+
+4. Progress Tracking Feature
+Use: Monitors how the project is moving.
+What it does: Tracks task status such as not started, in progress, blocked, and done. It also shows delays and timeline changes.
+
+5. Risk Assessment Feature
+Use: Detects project risks early.
+What it does: Identifies schedule, dependency, and resource risks, then assigns severity levels and suggests mitigation actions.
+
+6. Communication Feature
+Use: Sends updates to stakeholders.
+What it does: Generates daily or weekly project summaries, blocker alerts, and progress reports for email or team platforms.
+
+7. Dashboard Module
+Use: Gives a visual view of the project.
+What it does: Displays milestones, workload, progress, and risks in one place so managers can monitor the project quickly.
+
+8. Notification Module
+Use: Sends immediate alerts when action is needed.
+What it does: Notifies users about blockers, milestone slips, unresolved risks, or other important changes.
+
+9. Reporting Module
+Use: Produces formal project reports.
+What it does: Creates executive summaries, team-level reports, and snapshot records for review and submission.
+
+10. Admin Module
+Use: Manages system rules and access.
+What it does: Lets the team configure reporting cadence, risk severity rules, permissions, and override settings.
+
+11. Authentication and Role-Based Access Control
+Use: Protects the system and limits access.
+What it does: Ensures only approved users can access the right parts of the app based on their role, such as Project Manager, Team Lead, Team Member, or Stakeholder.
+
+12. Database and Storage Layer
+Use: Stores all project data.
+What it does: Saves plans, tasks, resources, risks, reports, audit logs, and snapshots so the system can retrieve and update them reliably.
+
+13. Audit Log Component
+Use: Keeps a history of important actions.
+What it does: Records planning decisions, manual overrides, allocations, and status changes for accountability and governance.
+
+14. AI and Orchestration Layer
+Use: Powers the intelligent parts of the system.
+What it does: Uses the language model and workflow logic to generate plans, summaries, risk insights, and recommendations in a structured way.
+
+15. Notification and Scheduler Support
+Use: Automates regular communication.
+What it does: Triggers scheduled updates, reminders, and escalation messages without needing manual follow-up every time.
+
+AI Features Added
+The AI-powered features included in this project are:
+
+1. AI Goal-to-Plan Generation
+Use: Converts a high-level project goal into a structured execution plan.
+What it does: Automatically creates milestones, tasks, dependencies, priorities, and suggested owners.
+
+2. AI Resource Assignment Recommendations
+Use: Suggests the best team member for each task.
+What it does: Recommends assignments based on role fit, skills, and current workload.
+
+3. AI Progress Insights
+Use: Interprets project activity and highlights important status changes.
+What it does: Detects delays, blocked tasks, and trend shifts to support faster decisions.
+
+4. AI Risk Detection and Mitigation Suggestions
+Use: Finds likely risks before they become major issues.
+What it does: Flags schedule, dependency, and capacity risks and proposes mitigation actions.
+
+5. AI Communication Summary Generation
+Use: Creates stakeholder-ready updates.
+What it does: Produces daily/weekly summaries, blocker alerts, and concise project health narratives.
+
+6. AI Reporting and Executive Snapshot Generation
+Use: Generates formal management reports quickly.
+What it does: Produces executive summaries, team-level reports, and milestone snapshot narratives.
+
+7. AI Supervisor Orchestration
+Use: Coordinates the full workflow across project features.
+What it does: Uses AI-driven orchestration logic to route tasks, merge outputs, and keep planning-to-reporting flow consistent.
+
+Summary
+The core system is made up of the Supervisor Orchestrator, Planning, Resource Allocation, Progress Tracking, Risk Assessment, Communication, Dashboard, Notification, Reporting, and Admin modules. Supporting parts like authentication, database storage, audit logs, AI orchestration, and scheduling make the system secure, reliable, and ready for capstone demo use.

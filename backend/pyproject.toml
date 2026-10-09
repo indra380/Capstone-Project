@@ -1,0 +1,32 @@
+[project]
+name = "project15-backend"
+version = "1.0.0"
+description = "AI Project Manager backend"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.116.0",
+  "uvicorn[standard]>=0.30.0",
+  "sqlalchemy>=2.0.0",
+  "alembic>=1.13.0",
+  "langgraph>=0.2.0",
+  "langchain>=0.3.0",
+  "langchain-core>=0.3.0",
+  "sqlmodel>=0.0.22",
+  "pydantic-settings>=2.3.0",
+  "loguru>=0.7.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+  "httpx>=0.27.0",
+  "ruff>=0.6.0"
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

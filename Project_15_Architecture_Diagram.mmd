@@ -1,0 +1,23 @@
+flowchart LR
+    U[Users: PM, Lead, Member, Stakeholder] --> UI[Next.js Frontend]
+    UI <--> API[FastAPI Backend]
+    API <--> SUP[Supervisor Orchestrator]
+
+    SUP <--> P[Planning Feature]
+    SUP <--> A[Resource Allocation Feature]
+    SUP <--> T[Progress Tracking Feature]
+    SUP <--> R[Risk Assessment Feature]
+    SUP <--> C[Communication Feature]
+
+    SUP <--> AI[AI Layer: OpenAI or Heuristic Fallback]
+    C --> N[Notification Webhook]
+
+    P <--> DB[(SQL Database)]
+    A <--> DB
+    T <--> DB
+    R <--> DB
+    C <--> DB
+
+    API <--> ADM[Admin Settings + RBAC]
+    API <--> AUD[Audit Logs]
+    API --> EXP[JSON/CSV Export]
